@@ -32,7 +32,7 @@ See [Benchmark Results](benchmark_results.md).
 ## supported model list
 - [ ] YOLOv10 (welcome to contribute)
 - [ ] YOLOv9 (welcome to contribute)
-- [x] [YOLOv8](configs/yolov8)
+- [x] [YOLOv8(增加MSDA模块和SEA模块)](configs/yolov8)
 - [x] [YOLOv7](configs/yolov7)
 - [x] [YOLOX](configs/yolox)
 - [x] [YOLOv5](configs/yolov5)
