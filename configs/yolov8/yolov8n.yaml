@@ -1,9 +1,14 @@
+# __BASE__: [
+#   '../coco.yaml',
+#   './hyp.scratch.low.yaml',
+#   './yolov8-base.yaml'
+# ]
 __BASE__: [
-  '../coco.yaml',
+  '../cattle.yaml',
   './hyp.scratch.low.yaml',
-  './yolov8-base.yaml'
+  # './yolov8-MSDA.yaml'
+  './yolov8-SEA.yaml'
 ]
-
 overflow_still_update: False
 network:
   depth_multiple: 0.33  # scales module repeats

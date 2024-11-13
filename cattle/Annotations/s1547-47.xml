@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<annotation>
+  <folder>images</folder>
+  <filename>s1547 (47).jpg</filename>
+  <path>C:/Users/youth/Desktop/D/yolo3-pytorch-master/VOCdevkit/VOC2024/Cattely-Cattle-Face-Images-Dataset-main/s1547\s1547 (47).jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>297</width>
+    <height>507</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>s1547</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>297</xmax>
+      <ymax>507</ymax>
+    </bndbox>
+  </object>
+</annotation>

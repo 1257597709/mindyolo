@@ -139,7 +139,7 @@ def test_detect(
     conf_free: bool = False,
     num_class: int = 80,
     nms_time_limit: float = -1.0,
-    is_coco_dataset: bool = True,
+    is_coco_dataset: bool = False,
     imgIds: list = [],
     per_batch_size: int = -1,
     rank: int = 0,
@@ -459,7 +459,7 @@ def main(args):
     ms.amp.auto_mixed_precision(network, amp_level=args.ms_amp_level)
 
     # Create Dataloader
-    dataset_path = args.data.val_set
+    dataset_path = args.data.test_set
     is_coco_dataset = "coco" in args.data.dataset_name
     dataset = COCODataset(
         dataset_path=dataset_path,
@@ -493,7 +493,7 @@ def main(args):
         network=network,
         dataloader=dataloader,
         anno_json_path=os.path.join(
-            args.data.val_set[: -len(args.data.val_set.split("/")[-1])], "annotations/instances_val2017.json"
+            args.data.test_set[: -len(args.data.test_set.split("/")[-1])], "instances.json"
         ),
         conf_thres=args.conf_thres,
         iou_thres=args.iou_thres,

@@ -195,7 +195,7 @@ class COCODataset:
 
             self.batch_shapes = np.ceil(np.array(shapes) * img_size / stride + pad).astype(np.int_) * stride
 
-        self.imgIds = [int(Path(im_file).stem) for im_file in self.img_files]
+        self.imgIds = [Path(im_file).stem for im_file in self.img_files]
 
     def cache_labels(self, path=Path("./labels.cache.npy")):
         # Cache dataset labels, check images and read shapes
@@ -1073,7 +1073,7 @@ class COCODataset:
         bboxes_pad = np.full((padding_size, 4), padding_value, dtype=np.float32)
         nL = len(bboxes)
         if nL:
-            cls_pad[:min(nL, padding_size)] = cls[:min(nL, padding_size)]
+            cls_pad[:min(nL, padding_size), 0] = cls[:min(nL, padding_size)]
             bboxes_pad[:min(nL, padding_size)] = bboxes[:min(nL, padding_size)]
         sample['cls'] = cls_pad
         sample['bboxes'] = bboxes_pad

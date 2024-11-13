@@ -7,6 +7,8 @@ from .implicit import *
 from .pool import *
 from .spp import *
 from .upsample import *
+from .MSDA_SPD import *
+from .SEAtt import *
 
 __all__ = [
     "Swish",
@@ -34,4 +36,7 @@ __all__ = [
     "SPPF",
     "Upsample",
     "Residualblock",
+    # add
+    "C2f_MSDA",
+    "SEAttention"
 ]

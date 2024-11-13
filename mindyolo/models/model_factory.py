@@ -150,6 +150,8 @@ def parse_model(d, ch, nc, sync_bn=False):  # model_dict, input_channels(3)
             DWConvNormAct,
             DWBottleneck,
             DWC3,
+            # add
+            C2f_MSDA,
         ):
             c1, c2 = ch[f], args[0]
             if max_channels:
@@ -170,6 +172,8 @@ def parse_model(d, ch, nc, sync_bn=False):  # model_dict, input_channels(3)
                 DWConvNormAct,
                 DWBottleneck,
                 DWC3,
+                # add
+                C2f_MSDA,
             ):
                 kwargs["sync_bn"] = sync_bn
             if m in (DownC, SPPCSPC, C3, C2f, DWC3):

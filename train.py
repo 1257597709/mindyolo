@@ -58,7 +58,7 @@ def get_parser_train(parents=None):
     parser.add_argument("--keep_checkpoint_max", type=int, default=100)
     parser.add_argument("--run_eval", type=ast.literal_eval, default=False, help="Whether to run eval during training")
     parser.add_argument("--conf_thres", type=float, default=0.001, help="object confidence threshold for run_eval")
-    parser.add_argument("--iou_thres", type=float, default=0.65, help="IOU threshold for NMS for run_eval")
+    parser.add_argument("--iou_thres", type=float, default=0.7, help="IOU threshold for NMS for run_eval")
     parser.add_argument("--conf_free", type=ast.literal_eval, default=False,
                         help="Whether the prediction result include conf")
     parser.add_argument("--rect", type=ast.literal_eval, default=False, help="rectangular training")
@@ -123,6 +123,8 @@ def train(args):
     # Create Dataloaders
     transforms = args.data.train_transforms
     stage_dataloaders = []
+    print(args.epochs)
+    print(transforms)
     stage_epochs = [args.epochs,] if not isinstance(transforms, dict) else transforms['stage_epochs']
     stage_transforms = [transforms,] if not isinstance(transforms, dict) else transforms['trans_list']
     assert len(stage_epochs) == len(stage_transforms), "The length of transforms and stage_epochs is not equal."
@@ -190,7 +192,8 @@ def train(args):
 
     # Scale loss hyps
     args.loss.cls *= args.data.nc / 80
-    args.loss.obj *= (args.img_size / 640) ** 2
+    # print(args.loss)
+    # args.loss.obj *= (args.img_size / 640) ** 2
     
     # Create Loss
     loss_fn = create_loss(
@@ -238,7 +241,7 @@ def train(args):
             task=args.task,
             dataloader=eval_dataloader,
             anno_json_path=os.path.join(
-                args.data.val_set[: -len(args.data.val_set.split("/")[-1])], "annotations/instances_val2017.json"
+                args.data.val_set[: -len(args.data.val_set.split("/")[-1])], "instances.json"
             ),
             conf_thres=args.conf_thres,
             iou_thres=args.iou_thres,

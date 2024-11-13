@@ -1,0 +1,72 @@
+2024-10-31 14:41:23,654 [INFO] 
+2024-10-31 14:41:23,656 [INFO] Please check the above information for the configurations
+2024-10-31 14:42:13,003 [WARNING] Parse Model, args: nearest, keep str type
+2024-10-31 14:42:14,401 [WARNING] Parse Model, args: nearest, keep str type
+2024-10-31 14:42:25,074 [INFO] number of network params, total: 3.038413M, trainable: 3.027994M
+2024-10-31 14:43:28,905 [WARNING] Parse Model, args: nearest, keep str type
+2024-10-31 14:43:29,800 [WARNING] Parse Model, args: nearest, keep str type
+2024-10-31 14:43:36,745 [INFO] number of network params, total: 3.038413M, trainable: 3.027994M
+2024-10-31 14:43:59,717 [INFO] ema_weight not exist, default pretrain weight is currently used.
+2024-10-31 14:43:59,737 [INFO] Dataset Cache file hash/version check success.
+2024-10-31 14:43:59,737 [INFO] Load dataset cache from [cattle/train/labels.cache.npy] success.
+2024-10-31 14:43:59,749 [INFO] Dataloader num parallel workers: [4]
+2024-10-31 14:43:59,774 [INFO] Dataset Cache file hash/version check success.
+2024-10-31 14:43:59,775 [INFO] Load dataset cache from [cattle/train/labels.cache.npy] success.
+2024-10-31 14:43:59,781 [INFO] Dataloader num parallel workers: [4]
+2024-10-31 14:44:03,734 [INFO] Dataset Cache file hash/version check success.
+2024-10-31 14:44:03,734 [INFO] Load dataset cache from [cattle/valid/labels.cache.npy] success.
+2024-10-31 14:44:03,737 [INFO] Dataloader num parallel workers: [1]
+2024-10-31 14:44:04,021 [INFO] 
+2024-10-31 14:44:04,511 [INFO] got 2 active callback as follows:
+2024-10-31 14:44:04,511 [INFO] SummaryCallback()
+2024-10-31 14:44:04,511 [INFO] EvalWhileTrain(stage_intervals=[1], stage_epochs=[9223372036854775807], stage_cum_epochs=[9223372036854775807], eval_last_epoch=True, isolated_epochs=[], keep_checkpoint_max=10, manager_best=<mindyolo.utils.checkpoint_manager.CheckpointManager object at 0xfffd8c64e6d0>, ckpt_filelist_best=[])
+2024-10-31 14:44:04,512 [WARNING] log interval should be less than total steps of one epoch, but got 100 > 57, set log_interval as steps_per_epoch 57
+2024-10-31 14:44:04,512 [WARNING] The first epoch will be compiled for the graph, which may take a long time; You can come back later :).
+2024-10-31 14:53:23,018 [INFO] Epoch 1/500, Step 57/57, imgsize (640, 640), loss: 8.5511, lbox: 2.5906, lcls: 2.8567, dfl: 3.1037, cur_lr: 0.09486886858940125
+2024-10-31 14:53:29,320 [INFO] Epoch 1/500, Step 57/57, step time: 9908.93 ms
+2024-10-31 14:53:32,433 [INFO] Saving model to ./runs/2024.10.31-14.41.23/weights/yolov8n-1_57.ckpt
+2024-10-31 14:53:32,433 [INFO] Epoch 1/500, epoch time: 9.47 min.
+2024-10-31 14:53:32,437 [WARNING] unable to load fast_coco_eval api, use normal one instead
+2024-10-31 14:54:19,167 [INFO] Sample 16/1, time cost: 45844.72 ms.
+2024-10-31 14:54:19,436 [INFO] Sample 16/2, time cost: 128.03 ms.
+2024-10-31 14:54:19,674 [INFO] Sample 16/3, time cost: 126.08 ms.
+2024-10-31 14:54:19,892 [INFO] Sample 16/4, time cost: 104.55 ms.
+2024-10-31 14:54:20,117 [INFO] Sample 16/5, time cost: 121.88 ms.
+2024-10-31 14:54:20,345 [INFO] Sample 16/6, time cost: 152.22 ms.
+2024-10-31 14:54:20,577 [INFO] Sample 16/7, time cost: 128.99 ms.
+2024-10-31 14:54:20,772 [INFO] Sample 16/8, time cost: 72.88 ms.
+2024-10-31 14:54:21,016 [INFO] Sample 16/9, time cost: 88.81 ms.
+2024-10-31 14:54:21,288 [INFO] Sample 16/10, time cost: 180.23 ms.
+2024-10-31 14:54:21,531 [INFO] Sample 16/11, time cost: 123.61 ms.
+2024-10-31 14:54:21,762 [INFO] Sample 16/12, time cost: 110.77 ms.
+2024-10-31 14:54:21,955 [INFO] Sample 16/13, time cost: 126.68 ms.
+2024-10-31 14:54:22,201 [INFO] Sample 16/14, time cost: 121.83 ms.
+2024-10-31 14:54:22,448 [INFO] Sample 16/15, time cost: 128.40 ms.
+2024-10-31 14:55:03,827 [INFO] Sample 16/16, time cost: 41362.80 ms.
+2024-10-31 14:55:03,827 [WARNING] Got 0 bbox after NMS, skip computing map
+2024-10-31 14:55:03,827 [INFO] Speed: 351.9/5.1/357.0 ms inference/NMS/total per 640x640 image at batch-size 16;
+2024-10-31 14:55:04,680 [INFO] Epoch 1/500, eval accuracy: 0.000, run_eval time: 92.246 s.
+2024-10-31 14:55:04,680 [INFO] best accuracy: 0.000, saved at: ./runs/2024.10.31-14.41.23/weights/best_yolov8n-1_57_acc0.000.ckpt
+2024-10-31 14:55:51,615 [INFO] Epoch 2/500, Step 57/57, imgsize (640, 640), loss: 8.1350, lbox: 2.4399, lcls: 2.7266, dfl: 2.9685, cur_lr: 0.0897354856133461
+2024-10-31 14:55:51,640 [INFO] Epoch 2/500, Step 57/57, step time: 2442.22 ms
+2024-10-31 14:55:57,516 [INFO] Saving model to ./runs/2024.10.31-14.41.23/weights/yolov8n-2_57.ckpt
+2024-10-31 14:55:57,516 [INFO] Epoch 2/500, epoch time: 2.42 min.
+2024-10-31 14:55:57,518 [WARNING] unable to load fast_coco_eval api, use normal one instead
+2024-10-31 14:56:06,955 [INFO] Sample 16/1, time cost: 7343.43 ms.
+2024-10-31 14:56:16,864 [INFO] Sample 16/2, time cost: 9664.07 ms.
+2024-10-31 14:56:31,151 [INFO] Sample 16/3, time cost: 13945.04 ms.
+2024-10-31 14:56:32,344 [INFO] Sample 16/4, time cost: 1023.88 ms.
+2024-10-31 14:56:36,394 [INFO] Sample 16/5, time cost: 3749.87 ms.
+2024-10-31 14:56:36,954 [INFO] Sample 16/6, time cost: 370.71 ms.
+2024-10-31 14:56:38,961 [INFO] Sample 16/7, time cost: 1812.98 ms.
+2024-10-31 14:56:40,797 [INFO] Sample 16/8, time cost: 1725.37 ms.
+2024-10-31 14:56:43,827 [INFO] Sample 16/9, time cost: 2895.80 ms.
+2024-10-31 14:56:45,176 [INFO] Sample 16/10, time cost: 1196.43 ms.
+2024-10-31 14:56:50,002 [INFO] Sample 16/11, time cost: 4722.29 ms.
+2024-10-31 14:56:56,571 [INFO] Sample 16/12, time cost: 6451.18 ms.
+2024-10-31 14:56:57,784 [INFO] Sample 16/13, time cost: 1092.56 ms.
+2024-10-31 14:57:02,281 [INFO] Sample 16/14, time cost: 4361.38 ms.
+2024-10-31 14:57:04,103 [INFO] Sample 16/15, time cost: 1703.68 ms.
+2024-10-31 14:57:05,790 [INFO] Sample 16/16, time cost: 1631.17 ms.
+2024-10-31 14:57:05,790 [INFO] loading annotations into memory...
+2024-10-31 14:57:05,790 [ERROR] pycocotools unable to run: [Errno 2] No such file or directory: 'cattle/valid/instance.json'

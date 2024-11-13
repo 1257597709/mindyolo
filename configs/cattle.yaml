@@ -1,0 +1,68 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco/
+# Example usage: yolo train data=data.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+data:
+  dataset_name: cattle
+  path: cattle # dataset root dir
+  train_set: cattle/train/images # train images (relative to 'path') 128 images
+  val_set: cattle/valid/images # val images (relative to 'path') 128 images
+  test_set: cattle/test/images # test images (optional)
+
+  nc: 46
+  # Classes
+  names:
+    [ 'n2005',
+      's114',
+      's1547',
+      's1556',
+      's1557',
+      's1607',
+      's1641',
+      's1706',
+      's1774',
+      's1778',
+       's1797',
+       's1804',
+       's1805',
+       's1806',
+       's1843',
+       's1853',
+       's1854',
+       's1868',
+       's1870',
+       's1877',
+       's1896',
+       's1903',
+       's1906',
+       's1914',
+       's1918',
+       's1935',
+       's2011',
+       's377',
+       's5562',
+       's7704',
+       's8803',
+       's8804',
+       's8813',
+       's8816',
+       's8819',
+       's8832',
+       's8835',
+       's8843',
+       'sn112',
+       'sn13',
+       'sn15',
+       'sn176',
+       'sn19',
+       'sn20',
+       'sn22',
+       'sn23']
+  train_transforms: []
+  test_transforms: []

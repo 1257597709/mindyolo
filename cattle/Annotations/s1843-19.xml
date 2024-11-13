@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<annotation>
+  <folder>images</folder>
+  <filename>s1843 (19).jpg</filename>
+  <path>C:/Users/youth/Desktop/D/yolo3-pytorch-master/VOCdevkit/VOC2024/Cattely-Cattle-Face-Images-Dataset-main/s1843\s1843 (19).jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>184</width>
+    <height>478</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>s1843</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>184</xmax>
+      <ymax>478</ymax>
+    </bndbox>
+  </object>
+</annotation>

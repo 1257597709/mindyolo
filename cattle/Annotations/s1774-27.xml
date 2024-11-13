@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<annotation>
+  <folder>images</folder>
+  <filename>s1774 (27).jpg</filename>
+  <path>C:/Users/youth/Desktop/D/yolo3-pytorch-master/VOCdevkit/VOC2024/Cattely-Cattle-Face-Images-Dataset-main/s1774\s1774 (27).jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>249</width>
+    <height>466</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>s1774</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>249</xmax>
+      <ymax>466</ymax>
+    </bndbox>
+  </object>
+</annotation>

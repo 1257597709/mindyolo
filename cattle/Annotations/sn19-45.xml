@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<annotation>
+  <folder>images</folder>
+  <filename>sn19 (45).jpg</filename>
+  <path>C:/Users/youth/Desktop/D/yolo3-pytorch-master/VOCdevkit/VOC2024/Cattely-Cattle-Face-Images-Dataset-main/sn19\sn19 (45).jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>205</width>
+    <height>407</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>sn19</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>205</xmax>
+      <ymax>407</ymax>
+    </bndbox>
+  </object>
+</annotation>
